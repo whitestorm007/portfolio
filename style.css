@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+@font-face {
+    font-family: myFirstFont;
+    src: url(./font/SF-Pro-Display-Light.otf);
+}
+
+body {
+    margin: 0px;
+    background-color: #212121;
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-nav-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 30px;
+}
+
+.left-nav {
+    align-items: center;
+    display: flex;
+}
+
+.left-nav a {
+    font-size: 19px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 25px;
+    color: white;
+}
+
+.center-nav h1 {
+    font-size: 40px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.right-nav {
+    display: flex;
+}
+
+.right-nav img {
+    margin: 0px 15px;
+    cursor: pointer;
+    width: 25px;
+}
+
+.logo-social:hover {
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+
+.main-center-name {
+    text-align: center;
+    margin-top: 7%;
+    font-size: 85px;
+    font-family: poppoins;
+    font-weight: 100;
+}
+
+.center-exp-content {
+    margin-top: 220px;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.item-btm {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.item-top {
+    font-size: 50px;
+}
+
+.center-cool-content {
+    margin-top: 150px;
+    text-align: center;
+}
+
+.cc-t {
+    font-size: 35px;
+}
+
+.cc-b {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.flex-portfolio-content {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.flex-portfolio-content img:hover {
+    transform: translateY(-12px);
+    transition: 0.5s;
+}
+
+.item-containerss {
+    justify-content: space-evenly;
+}
+
+.item-top-c {
+    padding: 40px 60px;
+    background-color: rgba(78, 78, 78, 0.35);
+    border-radius: 20px;
+    filter: grayscale(100%);
+}
+
+.item-per {
+    font-size: 30px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.div-skill-container {
+    margin-top: 90px;
+    margin-bottom: 90px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.name-skill {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.item-img img {
+    width: 80px;
+    height: 80px;
+}
+
+.item-img img:hover {}
+
+.item-top-c:hover {
+    filter: grayscale(0%);
+    transform: translateY(-12px);
+    transition: 0.5s;
+}
+
+.btm-center-text {
+    padding: 10px;
+    text-align: center;
+}
+
+.ac:hover {
+    color: #FF0000;
+    transition: 0.5s;
+    cursor: pointer;
+}

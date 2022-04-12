@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Welcome</title>
+</head>
+
+<body>
+    <div class="main-nav-container">
+        <div class="left-nav">
+            <a data-aos="fade-up" data-aos-duration="1000" href="#">HOME</a>
+            <a data-aos="fade-up" data-aos-duration="1000" href="#">GET IN TOUCH</a>
+        </div>
+        <div data-aos="fade-up" class="center-nav">
+            <h1>STORM</h1>
+        </div>
+        <div class="right-nav">
+            <img data-aos="fade-up" data-aos-duration="1000" onclick="clickMe(this.id)" id="1" src="./assets/linkdIn.svg" alt="">
+            <img data-aos="fade-up" data-aos-duration="1000" onclick="clickMe(this.id)" id="2" src="./assets/twitter.svg" alt="">
+            <img data-aos="fade-up" data-aos-duration="1000" onclick="clickMe(this.id)" id="3" src="./assets/insta.svg" alt="">
+            <img data-aos="fade-up" data-aos-duration="1000" onclick="clickMe(this.id)" id="4" src="./assets/facebook.svg" alt="">
+        </div>
+    </div>
+
+    <div data-aos="fade-up" class="main-center-name">
+        Jeet Shekhaliya <br> UI/UX Interaction Designer <br> Based in India
+    </div>
+
+
+    <div data-aos="fade-up" data-aos-duration="1000" class="center-exp-content counter">
+        <div class="item-container">
+            <div id="exp" class="item-top">
+                8
+            </div>
+            <div class="item-btm">
+                <p>YEARS OF <br> EXPERIENCE</p>
+            </div>
+        </div>
+        <div class="item-container">
+            <div id="client" class="item-top">
+                100%
+            </div>
+            <div class="item-btm">
+                <p>SATISFACTION
+                    <br> CLIENTS
+                </p>
+            </div>
+        </div>
+        <div class="item-container">
+            <div id="projects" class="item-top">
+                132
+            </div>
+            <div class="item-btm">
+                <p>PROJECTS
+                    <br> DONE
+                </p>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up" data-aos-duration="1000" class="center-cool-content">
+        <div class="cc-t"> Want to create <br> amazing stuff?</div>
+        <div class="cc-b"> Say Hello!</div>
+    </div>
+    <div data-aos="fade-up" data-aos-duration="1000" class="flex-portfolio-content">
+        <img src="./assets/image 1.svg" alt="">
+        <img src="./assets/image 2.svg" alt="">
+        <img src="./assets/image 3.svg" alt="">
+        <img src="./assets/image 4.svg" alt="">
+    </div>
+    <div data-aos="fade-up" data-aos-duration="1000" class="center-cool-content">
+        <div class="cc-t"> My Skills.</div>
+    </div>
+
+    <div data-aos="fade-up" data-aos-duration="1000" class="div-skill-container">
+        <div class="item-containerss">
+            <div class="item-top-c">
+                <div class="item-img"><img src="./assets/figma.svg" alt=""></div>
+                <div class="item-per">90%</div>
+            </div>
+            <div class="name-skill">Figma</div>
+        </div>
+
+        <div class="item-containerss">
+            <div class="item-top-c">
+                <div class="item-img"><img src="./assets/xd.svg" alt=""></div>
+                <div class="item-per">90%</div>
+            </div>
+            <div class="name-skill">Adobe XD</div>
+
+        </div>
+
+        <div class="item-containerss">
+            <div class="item-top-c">
+                <div class="item-img"><img src="./assets/bp.svg" alt=""></div>
+                <div class="item-per">90%</div>
+            </div>
+            <div class="name-skill">Bootstrap</div>
+
+        </div>
+
+        <div class="item-containerss">
+            <div class="item-top-c">
+                <div class="item-img"><img src="./assets/htmls.svg" alt=""></div>
+                <div class="item-per">90%</div>
+            </div>
+            <div class="name-skill">HTML5/CSS</div>
+
+        </div>
+    </div>
+    <div class="btm-center-text">© 2020 Jeet Shekhaliya. All rights reserved.</div>
+    <!-- script section -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        function clickMe(x) {
+
+            switch (x) {
+                case "1":
+                    console.log(x)
+                    window.open("https://in.linkedin.com/in/jeet-shekhaliya-3821451b7")
+                    break;
+                case "2":
+                    console.log(x)
+                    window.open("https://twitter.com/jeet_shekhaliya")
+
+                    break;
+                case "3":
+                    console.log(x)
+                    window.open("https://instagram.com/whitestorm_.07")
+
+                    break;
+                case "4":
+                    console.log(x)
+                    window.open("https://www.facebook.com/jeet.shekhaliya.7")
+
+                    break;
+                default:
+                    break;
+            }
+        }
+    </script>
+    <script>
+        AOS.init();
+        document.addEventListener('aos:in', ({
+            detail
+        }) => {
+            console.log('animated out', detail.className);
+            if (detail.className.includes("counter")) {
+                incressCounter()
+
+            }
+        });
+
+        function incressCounter() {
+            let a = document.getElementById("exp")
+            let b = document.getElementById("projects")
+            let c = document.getElementById("client")
+
+            let min_a = 1
+            let min_b = 125
+            let min_c = 90
+
+            let max_a = 9
+            let max_b = 133
+            let max_c = 101
+            incress()
+
+            function incress() {
+                b.innerHTML = min_b
+                c.innerHTML = min_c
+
+                if (min_a < max_a) {
+                    a.innerHTML = min_a
+                    min_a++
+                }
+                if (min_b < max_b) {
+                    b.innerHTML = min_b
+                    min_b++
+                }
+                if (min_c < max_c) {
+                    c.innerHTML = min_c + "%"
+                    min_c++
+                }
+
+                if (min_a < max_a || min_b < max_b || min_c < max_c) {
+                    setTimeout(function() {
+                        incress()
+                    }, 100)
+                }
+
+            }
+
+        }
+    </script>
+</body>
+
+</html>
